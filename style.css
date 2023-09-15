@@ -1,0 +1,30 @@
+@import url('./css/pokedex.css');
+@import url('./css/game.css');
+
+:root {
+    --pokemon-font: pokemon;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    place-items: center;
+
+    background-image: url('./circle-scatter-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: pokemon;
+    src: url('./Ketchum.ttf');
+}

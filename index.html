@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <article class="pokedex">
+        <ul class="pokedex__bulbs">
+            <li class="pokedex__bulb pokedex__bulb--bigbulb"></li>
+            <li class="pokedex__bulb pokedex__bulb--red"></li>
+            <li class="pokedex__bulb pokedex__bulb--yellow"></li>
+            <li class="pokedex__bulb pokedex__bulb--green"></li>
+        </ul>
+        <h1 data-value="Pokedex" class="pokedex__header">Pokedex</h1>
+        <div class="pokedex__info">
+            <div class="pokedex__pokeball"></div>
+        </div>
+        <menu class="pokedex__navigate">
+            <li><a href="" class="pokedex__back">Back</a></li>
+            <li><a href="" class="pokedex__forward">forward</a></li>
+        </menu>
+        <form action="/" class="pokedex__lookup" autocomplete="off">
+            <label for="pokemon-name" class="pokedex__searchLabel">
+                Pokemon: 
+                <input type="search" name="pokemon-name" class="pokedex__searchInput" placeholder="Ditto.." list="pokemon name" required>
+                <datalist class="pokedex__autocomplete" id="pokemon name"></datalist>
+            </label>
+    
+            <button type="submit" class="pokedex__submit">Search <i class="fas fa-search"></i></button>
+        </form>
+    </article>
+    <div class="game">
+        <p class="game__info"></p>
+        <img src="" class="game__pokemon" alt="hidden-pokemon">
+        <img class="game__background" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12ecb7ae-7059-48df-a4f8-2e3fb7858606/d47rmjf-de88a574-49c8-4dcf-9df4-7e11722e8bec.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEyZWNiN2FlLTcwNTktNDhkZi1hNGY4LTJlM2ZiNzg1ODYwNlwvZDQ3cm1qZi1kZTg4YTU3NC00OWM4LTRkY2YtOWRmNC03ZTExNzIyZThiZWMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.loswJAzDdppbY9aZ-eQs3DKvAdY7W91eosZhapx7gFU" alt="background-image">
+        <ul class="game__options"></ul>
+    </div>
+    <script src="./scripts/pokedex.js"></script>
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/fun.js"></script>
+</body>
+</html>
